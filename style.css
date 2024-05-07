@@ -8,25 +8,23 @@ body {
 
 .navbar {
     display: flex;
-    padding: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     font-family: "Jersey 20", sans-serif;
     font-size: large;
+    padding: 20px 20px 20px 20px;
 }
 
-#nav-name {
-    text-align: left;
+.nav-name {
     font-family: "Jersey 20", sans-serif;
-    margin-left: 10%;
-    margin-right: 30%;
-    padding-left: 50px;
-    color: grey;
-    padding: 10px;
     list-style: none;
 }
 
-#nav-name:hover {
-    color: black;
-    transition-duration: 0.5s;
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 a {
@@ -73,8 +71,6 @@ a:hover {
 }
 
 .intro-summary {
-    display: flex;
-    flex-direction: column;
     font-family: "Crimson Text", serif;
     font-size: 20px;
     margin: 100px;
@@ -105,7 +101,6 @@ a:hover {
 .contacts {
     display: flex;
     justify-content: flex-start;
-    font-family: "Crimson Text", serif;
 }
 
 #linkedin {
@@ -132,16 +127,12 @@ a:hover {
     border-radius: 10px;
 } */
 
-#skills-heading {
+#skills-heading,
+#workexperience-heading,
+#projects-heading {
     text-align: center;
     font-family: "Chakra Petch", sans-serif;
     padding: 30px 0 10px 0;
-}
-
-.skill-set {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .skill-set {
@@ -209,12 +200,6 @@ a:hover {
     text-align: left;
 }
 
-#workexperience-heading {
-    text-align: center;
-    font-family: "Chakra Petch", sans-serif;
-    padding: 30px 0 10px 0;
-}
-
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -234,16 +219,16 @@ a:hover {
     position: relative;
 }
 
-.company > h2 {
+.company>h2 {
     font-family: "Chakra Petch", sans-serif;
 }
 
-.company > ul {
+.company>ul {
     text-align: justify;
     list-style: square;
 }
 
-.company > small {
+.company>small {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
@@ -256,7 +241,7 @@ a:hover {
     left: 50%;
 }
 
-.timeline::after{
+.timeline::after {
     content: '';
     position: absolute;
     width: 3px;
@@ -266,12 +251,6 @@ a:hover {
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-}
-
-#projects-heading {
-    text-align: center;
-    font-family: "Chakra Petch", sans-serif;
-    padding: 30px 0 10px 0;
 }
 
 .projects {
@@ -288,11 +267,11 @@ a:hover {
     position: relative;
 }
 
-.project > h2{
+.project>h2 {
     font-family: "Chakra Petch", sans-serif;
 }
 
-.project > ul{
+.project>ul {
     list-style: square;
 }
 

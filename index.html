@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
@@ -23,11 +24,15 @@
 
 <body id="main">
     <div class="navbar">
-        <li id="nav-name"><a href="#main">Venkata Manoj Bhargav Maddali</a></li>
-        <li id="nav-about"><a href="#main">About</a></li>
-        <li id="nav-skills"><a href="#skills-heading">Skills</a></li>
-        <li id="nav-experience"><a href="#workexperience-heading">Experience</a></li>
-        <li id="nav-projects"><a href="#projects-heading">Projects</a></li>
+        <div class="navbar-name">
+            <a href="#main">Venkata Manoj Bhargav Maddali</a>
+        </div>
+        <div class="navbar-links">
+            <li id="nav-about"><a href="#main">About</a></li>
+            <li id="nav-skills"><a href="#skills-heading">Skills</a></li>
+            <li id="nav-experience"><a href="#workexperience-heading">Experience</a></li>
+            <li id="nav-projects"><a href="#projects-heading">Projects</a></li>
+        </div>
     </div>
     <div class="intro">
         <div id="intro-profilepicture">
@@ -148,7 +153,7 @@
                     <li>joined as part of my academic internship and actively engaged in projects aimed at issue
                         resolution and UI enhancements.</li>
                     <li>Leveraging my technical acumen, I contributed to the identification and resolution of critical
-                        issues while implementing user interf ace enhancements</li>
+                        issues while implementing user interface enhancements</li>
                 </ul>
             </div>
         </div>
@@ -157,14 +162,18 @@
     <div class="projects">
         <div class="project">
             <h2>Hyperledger Explorer | Open-Source Contribution</h2>
-            <a style="color: green;" href="https://github.com/hyperledger-labs/blockchain-explorer?tab=readme-ov-file#bootup-mode" target="_blank">My Contribution</a>
+            <a style="color: green;"
+                href="https://github.com/hyperledger-labs/blockchain-explorer?tab=readme-ov-file#bootup-mode"
+                target="_blank">My Contribution</a>
             <p>As part of my involvement in the open-source community, I contributed to the development of Hyperledger
                 Explorer, a vital tool for managing blockchain networks built on Hyperledger frameworks. This platform
                 facilitates real-time monitoring of transaction data, network topology, and smart contract details
                 through a user-friendly dashboard, catering to developers and administrators engaged in
                 Hyperledger-based projects.</p>
             <ul>
-                <li>Implemented the Bootup Mode feature, enhancing the blockchain explorer by providing a pre-filled database snapshot. This addition expedites the exploration process, enabling users to swiftly delve into blockchain data.</li>
+                <li>Implemented the Bootup Mode feature, enhancing the blockchain explorer by providing a pre-filled
+                    database snapshot. This addition expedites the exploration process, enabling users to swiftly delve
+                    into blockchain data.</li>
                 <li>Enables quick deployment, saving time for future exploration and analysis.</li>
                 <li>Simplifies initial setup process, ensuring a smoother experience for users of all levels.</li>
                 <li>Significantly reduces setup time, allowing users to start exploring the blockchain faster.</li>
