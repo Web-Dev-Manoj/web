@@ -1,4 +1,8 @@
 @media screen and (max-width:800px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -28,6 +32,7 @@
     .intro {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20%;
     }
 
     #intro-profilepicture>img {
@@ -58,32 +63,6 @@
         display: flex;
         justify-content: center;
         margin: 20px auto 20px auto;
-    }
-
-    .skill-set {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .headings {
-        font-size: 25px;
-    }
-
-    .webdevheadings,
-    .blockchainheadings {
-        font-size: 20px;
-    }
-
-    .webdev,
-    .blockchain {
-        font-size: 18px;
-    }
-
-    .webdev:hover,
-    .blockchain:hover {
-        border: 2px solid black;
-        border-radius: 15px;
-        transition-duration: 0.5s;
     }
 
     .timeline {
@@ -141,5 +120,31 @@
     footer {
         display: flex;
         flex-direction: column;
+    }
+
+    .expertise {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .expertise-headings {
+        font-size: 20px;
+    }
+
+    .skills {
+        font-size: 18px;
+    }
+
+    .project-name {
+        font-size: 20px;
+    }
+
+    .project-item {
+        font-size: 18px;
+    }
+
+    .connect-items {
+        display: none;
     }
 }
