@@ -4,6 +4,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background: #F9F7F7;
 }
 
 .navbar {
@@ -64,7 +65,7 @@ a:hover {
 #intro-profilepicture>img {
     width: 400px;
     height: 400px;
-    border: 2px solid grey;
+    border: none;
     border-radius: 30%;
     margin: 100px;
     position: relative;
@@ -152,13 +153,17 @@ a:hover {
     margin: 10%;
     border: 1px solid black;
     border-radius: 10px;
+    transition: transform 1s;
+    background: transparent;
 }
-
+ 
 .webdevelopment:hover,
 .blockchaindev:hover,
 .deployment:hover {
     transition-duration: 0.25s;
     box-shadow: 10px 10px 5px grey;
+    transform: scale(1.1,1.1);
+    transition-timing-function: ease;
 }
 
 .expertise-headings {
@@ -181,7 +186,6 @@ a:hover {
 .skills>p:hover {
     font-weight: bolder;
     transition-duration: 0.25s;
-    color: purple;
 }
 
 .timeline {
@@ -263,7 +267,7 @@ a:hover {
 }
 
 .project-item:hover {
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 5px 3px 5px grey;
     transition-duration: 0.25s;
 }
 
