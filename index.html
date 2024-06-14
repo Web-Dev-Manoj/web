@@ -3,192 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jersey+15&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jersey+15&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Venkata Manoj Bhargav</title>
 </head>
 
-<body id="main">
+<body>
     <div class="navbar">
-        <div class="navbar-name">
-            <a href="#main">Venkata Manoj Bhargav Maddali</a>
-        </div>
-        <div class="navbar-links">
-            <li id="nav-about"><a href="#main">About</a></li>
-            <li id="nav-skills"><a href="#skills-heading">Skills</a></li>
-            <li id="nav-experience"><a href="#workexperience-heading">Experience</a></li>
-            <li id="nav-projects"><a href="#projects-heading">Projects</a></li>
-        </div>
-    </div>
-    <div class="intro">
-        <div id="intro-profilepicture">
-            <img src="./assets/profile.jpeg" alt="profile-picture" />
-        </div>
-        <div class="intro-summary">
-            <h1 id="intro-summary-heading">Hello There!</h1>
-            <p>I'm a <span id="summary">Full stack Web Developer</span>,</p>
-            <p id="intro-summary-content-1">I enjoy building web apps</p>
-            <br />
-            <p id="intro-summary-content-2">Creative and results-driven software
-                engineer with a strong background in full-stack
-                development and <span style="color: purple;font-weight: bold;">Blockchain</span> technology. Proficient in
-                the <span style="font-weight: bold;text-decoration: underline;text-underline-offset: 0.5rem;">MERN</span> stack with hands-on experience in crafting
-                decentralized applications.</p>
-            <div class="contacts">
-                <a href="mailto:manojbhargav.mv@gmail.com" target="_blank"><img id="gmail"
-                    src="./assets/gmail.png" alt="gmail" /></a>
-                <a href="https://www.linkedin.com/in/manojbhargav/" target="_blank"><img id="linkedin"
-                        src="./assets/linkedin.svg" alt="Linkedin" /></a>
-                <a href="https://github.com/Web-Dev-Manoj" target="_blank"><img id="github" src="./assets/github.png"
-                        alt="github" /></a>
-            </div>
+        <a id="navbar-name" href="#main">Venkata Manoj Bhargav Maddali</a>
+        <div class="contact">
+            <a class="icons" href="mailto:manojbhargav.mv@gmail.com" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+            <a class="icons" href="https://www.linkedin.com/in/manojbhargav/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a class="icons" href="https://github.com/Web-Dev-Manoj" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
         </div>
     </div>
-    <h1 id="skills-heading">My Expertise</h1>
-    <div class="expertise">
-        <div class="webdevelopment">
-            <p class="expertise-headings">Web Development</p>
-            <div class="skills">
-                <p>HTML, CSS & Bootstrap</p>
-                <p>Javascript</p>
-                <p>ReactJS</p>
-                <p>NodeJS, Java</p>
-                <p>PostgreSQL</p>
+    <div class="container">
+        <div class="left">
+            <div class="container-content-1">
+                <p>I'm <br /><span id="typed-text"></span></p>
+            </div>
+            <div class="container-content-2">
+                <p>Creative and results-driven software
+                    engineer with a strong background in full-stack
+                    development and <span style="color: #EF945C;font-weight: bold;">Blockchain</span> technology.
+                    Proficient in
+                    the <span
+                        style="font-weight: bold;text-decoration: underline;text-underline-offset: 0.25rem;">MERN</span>
+                    stack with hands-on experience in crafting
+                    decentralized applications.</p>
             </div>
         </div>
-        <div class="blockchaindev">
-            <p class="expertise-headings">Blockchain</p>
-            <div class="skills">
-                <p>Hyperledger Fabric</p>
-                <p>Hyperledger Bevel</p>
-                <p>Hyperledger Explorer</p>
-            </div>
-            <p class="expertise-headings">GenAI</p>
-            <div class="skills">
-                <p>LLM's, Generative AI</p>
-            </div>
-        </div>
-        <div class="deployment">
-            <p class="expertise-headings">Deployment</p>
-            <div class="skills">
-                <p>Docker</p>
-                <p>Kubernetes</p>
-            </div>
+        <div class="right">
+            <img src="./assets/profile.jpeg" alt="Manoj Bhargav" />
         </div>
     </div>
-    <h1 id="workexperience-heading">Work Experience</h1>
-    <div class="timeline">
-        <div class="workexperience left">
-            <div class="company">
-                <h2>Software Engineer, Blockchain COE | <span style="color: purple;text-decoration: underline;">LTIMindtree</span></h2>
-                <p>Bengaluru, India</p>
-                <small>Oct 2021 - Present</small>
-                <ul>
-                    <li>Led product team to develop agent replacement model with preprocessing pipeline, boosting data
-                        processing efficiency by 25%.</li>
-                    <li>Automated JIRA reports using JIRA REST API and Power Query, halving report generation time and
-                        providing valuable insights.</li>
-                    <li>Directed cross-functional team to upgrade client’s Hyperledger network, integrating Hyperledger
-                        Explorer for 80% operational efficiency boost.</li>
-                    <li>Contributed to pioneering loyalty exchange platform using Blockchain, aiming for seamless
-                        redemption of reward points across providers.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="workexperience right">
-            <div class="company">
-                <h2>Software Engineer Intern | <span style="color: purple;text-decoration: underline;">LTIMindtree</span></h2>
-                <p>Bengaluru, India</p>
-                <small>Jun 2021 - Nov 2021</small>
-                <ul>
-                    <li>Joined the team as a Frontend Developer, contributing to the development and implementation of a
-                        cutting-edge solution. Spearheaded the integration of PowerBI, enabling clients to seamlessly
-                        access comprehensive business insights, streamlining their operations from end to end.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="workexperience left">
-            <div class="company">
-                <h2>Front-End Developer | <span style="color: purple;text-decoration: underline;">WTA Studios Pvt Ltd</span></h2>
-                <p>Hyderabad, India</p>
-                <small>May 2019 - July 2019</small>
-                <ul>
-                    <li>joined as part of my academic internship and actively engaged in projects aimed at issue
-                        resolution and UI enhancements.</li>
-                    <li>Leveraging my technical acumen, I contributed to the identification and resolution of critical
-                        issues while implementing user interface enhancements</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <h1 id="projects-heading">Projects</h1>
-    <div class="projects">
-        <div class="project-item">
-            <div class="project-name">Hyperledger Explorer | Open-Source Contribution</div>
-            <a style="color: green;"
-                href="https://github.com/hyperledger-labs/blockchain-explorer?tab=readme-ov-file#bootup-mode"
-                target="_blank">My Contribution - Checkout here</a>
-            <p>As part of my involvement in the open-source community, I contributed to the development of Hyperledger
-                Explorer, a vital tool for managing blockchain networks built on Hyperledger frameworks. This platform
-                facilitates real-time monitoring of transaction data, network topology, and smart contract details
-                through a user-friendly dashboard, catering to developers and administrators engaged in
-                Hyperledger-based projects.</p>
-            <ul>
-                <li>Implemented the Bootup Mode feature, enhancing the blockchain explorer by providing a pre-filled
-                    database snapshot. This addition expedites the exploration process, enabling users to swiftly delve
-                    into blockchain data.</li>
-                <li>Enables quick deployment, saving time for future exploration and analysis.</li>
-                <li>Simplifies initial setup process, ensuring a smoother experience for users of all levels.</li>
-                <li>Significantly reduces setup time, allowing users to start exploring the blockchain faster.</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <div class="project-name">Person Identification using Face and Speech Recognition for Visually impaired
-                Persons</div>
-                <a style="color: green;"
-                href="https://solidstatetechnology.us/index.php/JSST/article/view/9275"
-                target="_blank">My Contribution - Checkout here</a>
-            <p>The proposed system and methodology aim to assist individuals with visual impairments in identifying
-                persons and objects in their vicinity. This method involves several steps, beginning with the reception
-                of auditory signals emitted by individuals present in the vicinity of the visually impaired individual.
-                Subsequently, the system proceeds to capture images of the individuals and objects within the
-                surrounding environment.</p>
-        </div>
-        <div class="project-item">
-            <div class="project-name">Intelligent Agent For Mathematics Tutor</div>
-            <p>The Intelligent Agent for Mathematics Tutor project emulates the interactions between instructors and
-                students, as well as the dynamics inherent in teaching mathematics courses. Its objective is to enhance
-                the learning experience by integrating interactive quizzes.</p>
-        </div>
-    </div>
-    <div title="connect with me" class="connect">
-        <div class="connect-items">
-            <a href="mailto:manojbhargav.mv@gmail.com" target="_blank"><img id="gmail"
-                src="./assets/gmail.png" alt="gmail" /></a>
-            <a href="https://www.linkedin.com/in/manojbhargav/" target="_blank"><img id="linkedin"
-                    src="./assets/linkedin.svg" alt="Linkedin" /></a>
-            <a href="https://github.com/Web-Dev-Manoj" target="_blank"><img id="github" src="./assets/github.png"
-                    alt="github" /></a>
-        </div>
-    </div>
-    <footer>
-        <p>Venkata Manoj Bhargav &copy;</p>
-        <li id="nav-about"><a href="#main">Go To Top</a></li>
-    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="./script.js"></script>
 
 </html>
