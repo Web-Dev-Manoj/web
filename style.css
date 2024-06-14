@@ -278,3 +278,9 @@ span {
     justify-content: center;
     padding: 20px;
 }
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
