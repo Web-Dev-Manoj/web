@@ -1,287 +1,287 @@
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
-    background: #F9F7F7;
+    background: black;
+    color: #D9D9D9;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Jersey 20", sans-serif;
-    font-size: large;
-    padding: 20px 20px 20px 20px;
-}
-
-.nav-name {
-    font-family: "Jersey 20", sans-serif;
+li {
     list-style: none;
-}
-
-.navbar-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 a {
-    color: black;
-    font-family: "Jersey 20", sans-serif;
-    list-style: none;
+    color: #d9d9d9;
     text-decoration: none;
-    text-decoration-color: white;
 }
 
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-underline-offset: 10px;
-    transition-duration: 0.5s;
+p {
+    word-spacing: 2px;
+    line-height: 1.5;
 }
 
-#nav-about,
-#nav-skills,
-#nav-experience,
-#nav-projects {
-    padding: 5px;
-    margin: auto 50px auto 10px;
-    list-style: none;
-    text-decoration: none;
-    text-decoration-color: white;
+span {
+    color: #EF945C;
+    font-weight: bold;
+    text-shadow: 3px 3px 20px grey;
 }
 
-.intro {
+.headings {
+    font-size: 30px;
+    color: #38B6FF;
+    font-weight: bold;
+    text-align: center;
+    margin: 1% auto;
+}
+
+.next {
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+
+.next>a:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#navbar-name {
+    align-content: center;
+    color: #EF945C;
+    font-size: 20px;
+    text-shadow: 2px 2px 20px #EF945C;
+}
+
+.navbar>.contact {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
 }
 
-#intro-profilepicture>img {
-    width: 400px;
-    height: 400px;
+.icons {
+    display: block;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: auto 25%;
     border: none;
-    border-radius: 30%;
-    margin: 100px;
-    position: relative;
+    transition: all 0.2s;
 }
 
-#intro-profilepicture>img:hover {
-    box-shadow: 10px 10px 10px grey;
-    transition-duration: 0.25s;
+.icons:hover {
+    transform: scale(1.7, 1.7);
+    transition-timing-function: ease-in-out;
 }
 
-.intro-summary {
-    font-family: "Crimson Text", serif;
-    font-size: 20px;
-    margin: 100px;
-}
-
-#intro-summary-heading {
-    font-size: 50px;
-    font-family: "Chakra Petch", sans-serif;
-}
-
-#summary {
-    font-weight: bold;
-}
-
-#summary:hover {
-    font-weight: bolder;
-    color: green;
-    text-decoration: underline;
-    transition-duration: 0.5s;
-    text-underline-offset: 0.5rem;
-}
-
-#intro-summary-content-1,
-#intro-summary-content-2 {
-    text-align: justify;
-}
-
-.contacts {
-    display: flex;
-    justify-content: flex-start;
-}
-
-#linkedin {
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding-right: 30px;
-}
-
-#gmail {
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding-right: 30px;
-}
-
-#github {
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding-right: 30px;
-}
-
-#skills-heading,
-#workexperience-heading,
-#projects-heading,
-#connect-heading {
-    text-align: center;
-    font-family: "Chakra Petch", sans-serif;
-}
-
-.expertise {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 80vh;
-    gap: 5px;
-}
-
-.webdevelopment,
-.blockchaindev,
-.deployment {
-    width: auto;
-    height: auto;
-    margin: 10%;
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: transform 1s;
-    background: transparent;
-}
- 
-.webdevelopment:hover,
-.blockchaindev:hover,
-.deployment:hover {
-    transition-duration: 0.25s;
-    box-shadow: 10px 10px 5px grey;
-    transform: scale(1.1,1.1);
-    transition-timing-function: ease;
-}
-
-.expertise-headings {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
-    text-align: center;
-}
-
-.skills {
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skills>p:hover {
-    font-weight: bolder;
-    transition-duration: 0.25s;
-}
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 50px auto;
-    font-family: "Crimson Text", serif;
-}
-
-.workexperience {
-    position: relative;
-    width: 45%;
-    padding: 10px 50px;
-}
-
-.company {
-    font-size: 20px;
-    padding: 20px 30px;
-    position: relative;
-}
-
-.company>h2 {
-    font-family: "Chakra Petch", sans-serif;
-}
-
-.company>ul {
-    text-align: justify;
-    list-style: square;
-}
-
-.company>small {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
-    left: 50%;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: grey;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 90%;
-    margin: auto;
-}
-
-.project-name {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.project-item {
-    height: auto;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-family: "Crimson Text", serif;
-    text-align: justify;
-    font-size: 20px;
-}
-
-.project-item:hover {
-    box-shadow: 5px 3px 5px grey;
-    transition-duration: 0.25s;
-}
-
-.connect-items {
-    display: flex;
-    justify-content: center;
+.container {
     width: 100%;
 }
 
-footer {
-    text-align: center;
+.con-1 {
     display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0 100px;
+    margin: 50px auto;
+}
+
+.con-2,
+.con-3,
+.con-4,
+.con-5 {
+    margin: 4% auto;
+}
+
+.con-2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+    margin: 6% auto;
+}
+
+.con-3,
+.con-4 {
+    width: 80%;
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.con-5 {
+    width: 20%;
+    color: #38B6FF;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 5px 5px 60px #d9d9d9;
+    margin: 5% auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.container-content-1,
+.container-content-2 {
+    text-align: left;
+    margin: 0;
+}
+
+.container-content-1 {
+    text-shadow: 5px 5px 50px #D9D9D9;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.right {
+    width: 50%;
+}
+
+.right>img {
+    width: 50%;
+    height: auto;
+    margin: 15% auto 15% 40%;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 5px -5px 20px grey;
+    transition: all 0.25s;
+}
+
+.right>img:hover {
+    box-shadow: 20px -20px 30px grey;
+    transform: scale(1.2, 1.2);
+    transition-timing-function: ease;
+}
+
+.con-3-techstack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    gap: 20px;
+}
+
+.con-3-techstack> :nth-child(4) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.skill {
+    display: flex;
+    color: #EF945C;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 350px;
+    height: 220px;
+    margin: 20px;
+    border: none;
+    box-shadow: 5px -3px 10px grey;
+    border-radius: 40px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.skill>i {
+    width: auto;
+    color: #d9d9d9;
+    font-size: 25px;
+}
+
+.skill:hover {
+    transform: scale(1.2, 1.2);
+    transition-timing-function: ease;
+    box-shadow: -5px 3px 100px grey;
+}
+
+.subskill {
+    color: #d9d9d9;
+    display: flex;
+    font-size: 30px;
     justify-content: center;
-    margin: 20px auto;
-    background-color: grey;
-    color: white;
+    align-content: center;
+    gap: 15px;
+}
+
+.company {
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.25s;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.company:hover {
+    transform: scaleX(1.05);
+    transition-timing-function: ease;
+    box-shadow: 3px 3px 50px #d9d9d9;
+}
+
+.role {
+    color: #EF945C;
+    font-weight: bold;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: -2px -2px 2px grey;
+    border-radius: 30px;
+    gap: 20px;
+    text-align: justify;
+    transition: all 0.25s;
+}
+
+.project-item:hover {
+    transform: translateX(30px);
+    transition-timing-function: ease;
+}
+
+.project-item>a {
+    color: #56F6A9;
+}
+
+.project-name {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #EF945C;
+}
+
+.contacts-last {
+    display: flex;
+    font-size: 35px;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
 }
