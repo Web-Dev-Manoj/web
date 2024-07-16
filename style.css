@@ -90,7 +90,10 @@ span {
 
 .con-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0 100px;
+    margin: 50px auto;
 }
 
 .con-2,
@@ -114,6 +117,7 @@ span {
 .con-4 {
     width: 80%;
     display: flex;
+    padding: 0px 40px;
     flex-direction: column;
     gap: 20px;
     justify-content: space-evenly;
@@ -130,16 +134,13 @@ span {
 
 .left {
     display: flex;
-    padding: 0 16px;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
     width: 50%;
 }
 
 .container-content-1,
 .container-content-2 {
-    padding: 0 70px;
     text-align: left;
     margin: 0;
 }
@@ -151,14 +152,14 @@ span {
 }
 
 .right {
-    padding: 0 40px;
     width: 50%;
 }
 
 .right>img {
     width: 50%;
     height: auto;
-    margin: 15% 25%;
+    margin: 15% auto 15% 40%;
+    border: none;
     border-radius: 50px;
     box-shadow: 5px -5px 20px grey;
     transition: all 0.25s;
@@ -189,12 +190,12 @@ span {
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 220px;
     margin: 20px;
     border: none;
     box-shadow: 5px -3px 10px grey;
-    border-radius: 30px;
+    border-radius: 40px;
     text-align: center;
     transition: all 0.25s;
 }
@@ -221,7 +222,7 @@ span {
 }
 
 .company {
-    padding: 10px 30px;
+    padding: 10px 60px;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -232,12 +233,12 @@ span {
 }
 
 .company:hover {
-    transform: scaleX(1.1);
+    transform: scaleX(1.05);
     transition-timing-function: ease;
     box-shadow: 3px 3px 50px #d9d9d9;
 }
 
-.company-name {
+.role {
     color: #EF945C;
     font-weight: bold;
 }
