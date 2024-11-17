@@ -29,6 +29,10 @@
         text-align: center;
     }
 
+    #navbar-name {
+        font-size: inherit
+    }
+
     .icons {
         display: none;
     }
